@@ -121,13 +121,13 @@ function inBossRoundCheck (){
 }
 
 
-function begin(){
+function begin(percent){
     if(beginImgReady){
         if( keysUp["13"] == true){
             soundArray["bgm1"].play();
             beginModel.state = true;
         }else{
-            drewWelcome();
+            drewWelcome(percent);
         }
     }
 }

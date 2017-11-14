@@ -69,7 +69,8 @@ function drewLeaf (){
 	}
 }
 
-function drewWelcome (){
+function drewWelcome (percent){
+	// percent
  	ctx.drawImage(beginImg, 80, 70);//->>
 }
 

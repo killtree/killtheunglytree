@@ -35,19 +35,21 @@ var main = function () {
 then = Date.now();
 var b = setInterval(function(){
     var soundOk = true;
-    for (var sound in soundArray) {//canplay
-        if(!sound.readyState || sound.readyState != HAVE_ENOUGH_DATA){
+    var sumLoadStatesOK = 0;
+    var audios = 14;
+    for (var sound in soundArray) {
+        if(!soundArray[sound].readyState || soundArray[sound].readyState != 4){//HAVE_ENOUGH_DATA
             soundOk = false;
-            break;
+        }else{
+            sumLoadStatesOK++;
         }
     }
 
-    if(beginModel.state == true && !soundOk){
-        //加载 load 动画
+    if(beginModel.state == true && soundOk){
         setInterval(main, 0);
         clearInterval(b);
     }else{
-        begin();
+        begin(sumLoadStatesOK/audios);
     }
 },0);
 
