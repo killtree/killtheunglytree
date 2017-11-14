@@ -145,44 +145,59 @@ var soundArray = {}
 soundArray["bgm1"] = new Audio('media/bgm1.mp3');
 soundArray["bgm1"].volume = 0.72;
 soundArray["bgm1"].loop = true;
+soundArray["bgm1"].preload = "auto";
  
 soundArray["bgm2"] = new Audio('media/bgm2.mp3');
 soundArray["bgm2"].volume = 0.6;
+soundArray["bgm2"].preload = "auto";
 
 soundArray["boss_heart_nomal"] = new Audio('media/boss_heart_nomal.wav');
 soundArray["boss_heart_nomal"].volume = 0.7;
+soundArray["boss_heart_nomal"].preload = "auto";
 
 soundArray["boss_heart_top"] = new Audio('media/boss_heart_top.wav');
 soundArray["boss_heart_top"].volume = 0.7;
+soundArray["boss_heart_top"].preload = "auto";
 
 soundArray["boss_heart_deep"] = new Audio('media/boss_heart_deep.wav');
 soundArray["boss_heart_deep"].volume = 0.7;
+soundArray["boss_heart_deep"].preload = "auto";
 
 soundArray["boss_attack_nomal"] = new Audio('media/boss_attack_nomal.wav');
 soundArray["boss_attack_nomal"].volume = 0.38;
+soundArray["boss_attack_nomal"].preload = "auto";
 
 soundArray["boss_dead"] = new Audio('media/boss_dead.wav');
 soundArray["boss_dead"].volume = 0.7;
+soundArray["boss_dead"].preload = "auto";
 
 soundArray["boss_laugh"] = new Audio('media/boss_laugh.wav');
 soundArray["boss_laugh"].volume = 0.7;
+soundArray["boss_laugh"].preload = "auto";
 
 soundArray["hero_heart_nomal1"] = new Audio('media/hero_heart_nomal1.wav');
 soundArray["hero_heart_nomal1"].volume = 0.7;
+soundArray["hero_heart_nomal1"].preload = "auto";
 
 soundArray["hero_heart_nomal2"] = new Audio('media/hero_heart_nomal2.wav');
 soundArray["hero_heart_nomal2"].volume = 0.7;
+soundArray["hero_heart_nomal2"].preload = "auto";
 
 soundArray["hero_power"] = new Audio('media/hero_power.wav');
 soundArray["hero_power"].volume = 0.76;
+soundArray["hero_power"].preload = "auto";
 
 soundArray["hero_dead"] = new Audio('media/hero_dead.wav');
 soundArray["hero_dead"].volume = 0.7;
+soundArray["hero_dead"].preload = "auto";
+
 soundArray["fail"] = new Audio('media/fail.mp3');
 soundArray["fail"].volume = 0.7;
+soundArray["fail"].preload = "auto";
 
 soundArray["win"] = new Audio('media/win.mp3');
 soundArray["win"].volume = 1.0;
+soundArray["win"].preload = "auto";
 
 
 var criCircleModel = {

@@ -35,7 +35,7 @@ var main = function () {
 then = Date.now();
 var b = setInterval(function(){
     var soundOk = true;
-    for (var sound in soundArray) {
+    for (var sound in soundArray) {//canplay
         if(!sound.readyState || sound.readyState != HAVE_ENOUGH_DATA){
             soundOk = false;
             break;
@@ -43,6 +43,7 @@ var b = setInterval(function(){
     }
 
     if(beginModel.state == true && !soundOk){
+        //加载 load 动画
         setInterval(main, 0);
         clearInterval(b);
     }else{
