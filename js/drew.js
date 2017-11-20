@@ -72,6 +72,8 @@ function drewLeaf (){
 function drewWelcome (percent){
 	// percent
  	ctx.drawImage(beginImg, 80, 70);//->>
+ 	ctx.fillStyle = "yellow";
+ 	ctx.fillRect(60,100,180 * parseFloat(percent),2);
 }
 
 
